@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            background-color: azure;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 40px;
+            background-color: rgb(36, 31, 31);
+            justify-content: space-around;
+            padding: 10px;
+            margin: 30px;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .item1 {
+            background-color: rgb(221, 221, 223);
+            width: 80%;
+            height: 150%;
+            grid-row-start: 1/3;
+            padding-left: 15px;
+            padding-top: 15px;
+            border-radius: 15px;
+        }
+        
+        .jeremy {
+            background-color: rgb(38, 0, 255);
+            width: 100%;
+        }
+        
+        .item1 img {
+            width: 50px;
+        }
+        
+        .item2 {
+            background-color: rgb(241, 210, 126);
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 2/3;
+            border-radius: 15px;
+        }
+        
+        .item2 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item3 {
+            background-color: rgb(43, 179, 224);
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 3;
+            border-radius: 15px;
+        }
+        
+        .item3 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item4 {
+            background-color: rgb(238, 72, 72);
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 4;
+            border-radius: 15px;
+        }
+        
+        .item4 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item5 {
+            background-color: rgb(221, 221, 223);
+            grid-row: 2/3;
+            grid-column: 1/2;
+            border-radius: 15px;
+        }
+        
+        .item5 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item6 {
+            background-color: lightblue;
+            width: 100%;
+            height: 100%;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            border-radius: 15px;
+        }
+        
+        .item6 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item7 {
+            background-color: lightblue;
+            width: 100%;
+            height: 100%;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            border-radius: 15px;
+        }
+        
+        .item7 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .item8 {
+            background-color: lightblue;
+            width: 100%;
+            height: 100%;
+            grid-column: 4/5;
+            grid-row: 2/3;
+            border-radius: 15px;
+        }
+        
+        .item8 img {
+            width: 25%;
+            float: right;
+            height: 35%;
+        }
+        
+        .work {
+            margin-top: 15px;
+            background-color: rgb(32, 36, 73);
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+            border-radius: 15px;
+        }
+        
+        .work h1 {
+            color: white;
+        }
+        
+        .work img {
+            width: 15px;
+            height: 15px;
+        }
+        
+        .item2>.work {
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        @media all and(max-width: 600px) {
+            body {
+                background-color: azure;
+            }
+        }
+        /* .play {
+            padding-left: 15px;
+            height: 100%;
+            padding-top: 50px;
+            margin-top: 30px;
+            background-color: aliceblue;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1" style="background-color: rgb(98, 72, 245);">
+            <img src="./images/image-jeremy.png" alt="">
+
+            <p style="color: rgb(245, 236, 236);  ">report for</p>
+            <br>
+            <h1 style="color: aliceblue;font: 10px; font-weight: 100;">Jeremy <br>Robson </h1>
+        </div>
+
+
+        <div class="item2" style="background-color: rgb(255, 238, 0);">
+            <img src="./images/icon-work.svg" alt="">
+            <icon>
+            </icon>
+            <div class="work">
+                <img src="images/icon-ellipsis.svg">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Work</p>
+                <h1>32 hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 36hrs</p>
+            </div>
+        </div>
+        <div class=" item3 ">
+            <img src="./images/icon-play.svg " alt=" ">
+            <div class="work ">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Play</p>
+                <h1>10 hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 8hrs</p>
+            </div>
+        </div>
+        <div class=" item4 "><img src="./images/icon-study.svg " alt=" ">
+            <div class="work ">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Study</p>
+                <h1>4 hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 7hrs</p>
+            </div>
+        </div>
+        <div class=" item5 ">
+            <div class="work ">
+                <p style="color: rgb(255, 255, 255); font-weight: 10px;margin-left: 15px; font-size:smaller; ">Daily</p>
+                <h1>weekly</h1>
+                <p style="color:rgb(171, 177, 182); ">Monthly</p>
+            </div>
+        </div>
+        <div class=" item6 "><img src="./images/icon-exercise.svg " alt=" ">
+            <div class="work ">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Exercise</p>
+                <h1>4hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 5hrs</p>
+            </div>
+        </div>
+        <div class=" item7 "><img src="./images/icon-social.svg " alt=" ">
+            <div class="work ">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Social</p>
+                <h1>5hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 10hrs</p>
+            </div>
+        </div>
+        <div class=" item8 "><img src="./images/icon-self-care.svg " alt=" ">
+            <div class="work ">
+                <p style="color: white; font-weight: 100px;margin-left: 15px; ">Self-care </p>
+                <h1>2hrs</h1>
+                <p style="color:rgb(171, 177, 182); ">Last Week- 2hrs</p>
+            </div>
+        </div>
+    </div>
+
+    <div class=" attribution ">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">gideon kipyegon</a>.
+    </div>
+</body>
+
+</html>
